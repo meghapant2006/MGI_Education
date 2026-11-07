@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-import { NoticeTicker } from './components/NoticeTicker';
 import { FloatingCTA } from './components/FloatingCTA';
 import { InquiryModal } from './components/InquiryModal';
 
@@ -31,12 +30,9 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
-      {/* Show Notice ticker and public navbar only on public pages */}
+      {/* Show public navbar only on public pages */}
       {!isAdminRoute && (
-        <>
-          <NoticeTicker />
-          <Navbar onOpenEnquiry={handleOpenEnquiry} />
-        </>
+        <Navbar onOpenEnquiry={handleOpenEnquiry} />
       )}
 
       {/* Main Page Content */}

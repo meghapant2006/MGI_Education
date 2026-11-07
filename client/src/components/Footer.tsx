@@ -9,15 +9,12 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Col 1 & 2: Brand Information */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center space-x-3">
+            <div className="inline-block bg-white px-3.5 py-2 rounded-2xl shadow-md">
               <img
                 src="/logo.png"
-                alt="MGI Education"
-                className="h-12 w-auto bg-white/10 p-1.5 rounded-lg object-contain"
+                alt="MGI Education Logo"
+                className="h-14 w-auto object-contain"
               />
-              <span className="text-2xl font-black text-white tracking-tight">
-                MGI <span className="text-accent">EDUCATION</span>
-              </span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               MGI Education (MGi Computer & Academic Education) is Delhi's premier counseling and training institute.

@@ -243,7 +243,9 @@ export const AdminDashboard: React.FC = () => {
       <header className="bg-navy-950 text-white py-4 px-4 sm:px-8 shadow-md">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="flex items-center space-x-3">
-            <img src="/logo.png" alt="MGI Logo" className="h-10 w-auto object-contain" />
+            <div className="bg-white px-2 py-1 rounded-xl shrink-0">
+              <img src="/logo.png" alt="MGI Logo" className="h-9 w-auto object-contain" />
+            </div>
             <div>
               <h1 className="text-lg font-black tracking-tight leading-tight">
                 MGI EDUCATION <span className="text-accent text-xs font-semibold ml-2">ADMIN PORTAL</span>

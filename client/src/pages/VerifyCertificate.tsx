@@ -179,10 +179,10 @@ export const VerifyCertificate: React.FC = () => {
             <div className="p-6 sm:p-8 space-y-6">
               <div className="flex items-center justify-between border-b border-slate-100 pb-4">
                 <div className="flex items-center space-x-3">
-                  <img src="/logo.png" alt="MGI Logo" className="h-10 w-auto object-contain" />
+                  <img src="/logo.png" alt="MGI Logo" className="h-12 w-auto object-contain" />
                   <div>
-                    <div className="font-black text-slate-900 text-sm">MGI EDUCATION</div>
-                    <div className="text-[11px] text-slate-500">Center for Distance & Computer Education</div>
+                    <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Authorized Study & Training Center</div>
+                    <div className="text-xs text-slate-600 font-medium">Mayur Vihar Phase-3, Delhi</div>
                   </div>
                 </div>
                 <div className="text-right">
