@@ -1,9 +1,6 @@
 {
-  "version": 2,
-  "buildCommand": "cd client && npm install && npm run build && cd .. && rm -rf dist && cp -r client/dist dist",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/(.*)",
