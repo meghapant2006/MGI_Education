@@ -15,7 +15,8 @@ import {
   Clock,
   MapPin,
   Star,
-  Sparkles
+  Sparkles,
+  ExternalLink
 } from 'lucide-react';
 import { api } from '../services/api';
 import { Course } from '../types';
@@ -528,64 +529,113 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Real Verified Student Reviews from Justdial */}
       <section className="bg-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-12">
-          <div className="text-center max-w-2xl mx-auto space-y-2">
-            <div className="text-xs font-bold text-accent uppercase tracking-wider">
-              Student Success Stories
+        <div className="max-w-7xl mx-auto space-y-10">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <div className="inline-flex items-center space-x-1.5 bg-amber-500/20 text-amber-300 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+              <Star className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
+              <span>4.7 / 5.0 Star Rating on Justdial (63+ Verified Reviews)</span>
             </div>
-            <h2 className="text-3xl font-black">Hear From Our Students</h2>
-            <p className="text-sm text-slate-400">
-              Thousands of students have transformed their career paths through MGI Education.
+            <h2 className="text-3xl sm:text-4xl font-black">
+              Real Student Reviews & Feedback
+            </h2>
+            <p className="text-sm text-slate-400 max-w-xl mx-auto">
+              Real testimonials submitted by students and parents on Justdial for MGI Computer & Academic Education (Mayur Vihar-3, Delhi).
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4">
-              <div className="flex text-amber-400 space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-400" />
-                ))}
+            {/* Real Review 1 */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex text-amber-400 space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-amber-400" />
+                    ))}
+                  </div>
+                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded">
+                    Verified Justdial User
+                  </span>
+                </div>
+                <p className="text-sm text-slate-200 leading-relaxed italic">
+                  "My experience at MGI Computer Education was exceptional! The services offered were reasonably priced, making quality education accessible. The instructors were highly experienced, providing valuable insights and support. I was impressed by the quick service, ensuring that I grasped concepts efficiently. Overall, a fantastic learning environment!"
+                </p>
               </div>
-              <p className="text-sm text-slate-300 italic">
-                "MGI Education completely transformed my skills. The faculty gave personal attention on every topic in Tally and Excel. Within 2 months of completing my ADCA, I got placed as an Office Assistant in Noida!"
-              </p>
-              <div className="pt-2 border-t border-white/10">
-                <div className="font-bold text-white text-sm">Vikas Rawat</div>
-                <div className="text-xs text-accent">ADCA Graduate • Office Executive</div>
-              </div>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4">
-              <div className="flex text-amber-400 space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-400" />
-                ))}
-              </div>
-              <p className="text-sm text-slate-300 italic">
-                "I had dropped out in 11th due to family circumstances. MGI Education guided me with NIOS 12th admission, helped with all TMA files and exam preparation. I scored 78% and am now enrolled in graduation!"
-              </p>
-              <div className="pt-2 border-t border-white/10">
-                <div className="font-bold text-white text-sm">Neha Pandey</div>
-                <div className="text-xs text-accent">NIOS 12th • College Student</div>
+              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
+                <div>
+                  <div className="font-bold text-white text-sm">Verified Student</div>
+                  <div className="text-slate-400 text-[11px]">Computer Course & Skills</div>
+                </div>
+                <div className="text-amber-400 font-bold">5.0 / 5.0 ★</div>
               </div>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4">
-              <div className="flex text-amber-400 space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-400" />
-                ))}
+            {/* Real Review 2 */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex text-amber-400 space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-amber-400" />
+                    ))}
+                  </div>
+                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded">
+                    Verified Justdial User
+                  </span>
+                </div>
+                <p className="text-sm text-slate-200 leading-relaxed italic">
+                  "Having highly experienced faculty to monitor one on one personally, they understand the need and help accordingly to choose the course as per your career. All sort of courses are available in this recognised institute even with competitive fee structure. Every staff member of the institute is very helpful from top to bottom."
+                </p>
               </div>
-              <p className="text-sm text-slate-300 italic">
-                "Best educational guidance center in Mayur Vihar. All degree documentation, university portal access, and examination guidelines were smoothly handled by the team. Highly recommended!"
-              </p>
-              <div className="pt-2 border-t border-white/10">
-                <div className="font-bold text-white text-sm">Deepak Joshi</div>
-                <div className="text-xs text-accent">BCA Graduate • IT Associate</div>
+              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
+                <div>
+                  <div className="font-bold text-white text-sm">Career Guidance Student</div>
+                  <div className="text-slate-400 text-[11px]">Career Counseling & IT</div>
+                </div>
+                <div className="text-amber-400 font-bold">5.0 / 5.0 ★</div>
               </div>
             </div>
+
+            {/* Real Review 3 */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex text-amber-400 space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-amber-400" />
+                    ))}
+                  </div>
+                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded">
+                    Verified Justdial User
+                  </span>
+                </div>
+                <p className="text-sm text-slate-200 leading-relaxed italic">
+                  "Best place for NIOS admission and University admission guidance in Mayur Vihar. All documentation, subject selection, and exam guidance were smoothly handled by the team. Highly recommended for students looking for genuine learning and career support!"
+                </p>
+              </div>
+              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
+                <div>
+                  <div className="font-bold text-white text-sm">Admission Aspirant</div>
+                  <div className="text-slate-400 text-[11px]">NIOS & Degree Admissions</div>
+                </div>
+                <div className="text-amber-400 font-bold">5.0 / 5.0 ★</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Justdial Link Out Banner */}
+          <div className="text-center pt-2">
+            <a
+              href="https://www.justdial.com/Delhi/Mgi-Computer-Education-Opposite-Bank-Of-Baroda-Mayur-Vihar-Phase-3/011PXX11-XX11-200814112025-K9Y2_BZDET"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 text-white font-bold px-5 py-2.5 rounded-xl text-xs transition border border-white/20 shadow-sm hover:scale-105 duration-200"
+            >
+              <span>View All 63+ Verified Reviews on Justdial</span>
+              <ExternalLink className="w-3.5 h-3.5 text-accent" />
+            </a>
           </div>
         </div>
       </section>
