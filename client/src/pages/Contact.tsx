@@ -7,7 +7,10 @@ import {
   MessageCircle,
   Send,
   CheckCircle,
-  AlertCircle
+  AlertCircle,
+  Instagram,
+  Facebook,
+  Twitter
 } from 'lucide-react';
 import { api } from '../services/api';
 
@@ -122,6 +125,58 @@ export const Contact: React.FC = () => {
                     <span>Monday - Saturday: 9:00 AM - 7:00 PM</span> <br />
                     <span className="text-xs text-slate-500">Sunday: Counseling by prior appointment</span>
                   </div>
+                </div>
+              </div>
+
+              {/* Round Horizontal Social Media Links with Yellow Border */}
+              <div className="pt-4 border-t border-slate-100">
+                <span className="font-bold text-slate-900 block text-xs uppercase tracking-wider mb-3">
+                  Follow & Connect With Us:
+                </span>
+                <div className="flex flex-row items-center space-x-3.5">
+                  {/* Instagram */}
+                  <a
+                    href="https://www.instagram.com/mgiclasses?igsh=cjU0b2l4a2c3ZHI3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 rounded-full border-[2.5px] border-yellow-400 bg-navy-950 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-md"
+                    title="Follow on Instagram"
+                  >
+                    <Instagram className="w-5 h-5 text-white" />
+                  </a>
+
+                  {/* Facebook */}
+                  <a
+                    href="https://www.facebook.com/mgieducation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 rounded-full border-[2.5px] border-yellow-400 bg-navy-950 hover:bg-[#1877F2] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-md"
+                    title="Follow on Facebook"
+                  >
+                    <Facebook className="w-5 h-5 text-white" />
+                  </a>
+
+                  {/* WhatsApp */}
+                  <a
+                    href="https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20have%20an%20admission%20inquiry."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 rounded-full border-[2.5px] border-yellow-400 bg-navy-950 hover:bg-[#25D366] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-md"
+                    title="Chat on WhatsApp"
+                  >
+                    <MessageCircle className="w-5 h-5 text-white" />
+                  </a>
+
+                  {/* Twitter / X */}
+                  <a
+                    href="https://twitter.com/mgieducation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 rounded-full border-[2.5px] border-yellow-400 bg-navy-950 hover:bg-[#1DA1F2] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-md"
+                    title="Follow on Twitter / X"
+                  >
+                    <Twitter className="w-5 h-5 text-white" />
+                  </a>
                 </div>
               </div>
 

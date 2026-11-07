@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { api } from '../services/api';
 import { Course } from '../types';
+import { AnimatedCounter } from '../components/AnimatedCounter';
 
 interface HomeProps {
   onOpenEnquiry: (courseName?: string, category?: string) => void;
@@ -102,16 +103,18 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               {/* Trust Badges */}
               <div className="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-center lg:text-left">
                 <div>
-                  <div className="text-2xl font-black text-white">5,000+</div>
-                  <div className="text-xs text-slate-400">Students Guided</div>
+                  <div className="text-2xl sm:text-3xl font-black text-white">
+                    <AnimatedCounter target={5000} duration={1500} suffix="+" />
+                  </div>
+                  <div className="text-xs text-slate-400 font-medium">Students Guided</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-black text-white">100%</div>
-                  <div className="text-xs text-slate-400">Valid & Recognized</div>
+                  <div className="text-2xl sm:text-3xl font-black text-white">100%</div>
+                  <div className="text-xs text-slate-400 font-medium">Valid & Recognized</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-black text-white">10+ Yrs</div>
-                  <div className="text-xs text-slate-400">Educational Legacy</div>
+                  <div className="text-2xl sm:text-3xl font-black text-white">10+ Yrs</div>
+                  <div className="text-xs text-slate-400 font-medium">Educational Legacy</div>
                 </div>
               </div>
             </div>

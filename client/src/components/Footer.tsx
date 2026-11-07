@@ -1,6 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, MessageCircle, ShieldCheck, ExternalLink, ArrowRight } from 'lucide-react';
+import {
+  Phone,
+  Mail,
+  MapPin,
+  MessageCircle,
+  ShieldCheck,
+  ExternalLink,
+  ArrowRight,
+  Instagram,
+  Facebook,
+  Twitter
+} from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -36,15 +47,49 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 flex flex-row items-center space-x-3">
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/mgiclasses?igsh=cjU0b2l4a2c3ZHI3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full border-2 border-yellow-400 bg-navy-900 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-md"
+                title="Follow on Instagram"
+              >
+                <Instagram className="w-4 h-4 text-white" />
+              </a>
+
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/mgieducation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full border-2 border-yellow-400 bg-navy-900 hover:bg-[#1877F2] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-md"
+                title="Follow on Facebook"
+              >
+                <Facebook className="w-4 h-4 text-white" />
+              </a>
+
+              {/* WhatsApp */}
               <a
                 href="https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20want%20to%20know%20more%20about%20admissions."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition"
+                className="w-10 h-10 rounded-full border-2 border-yellow-400 bg-navy-900 hover:bg-[#25D366] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-md"
+                title="Chat on WhatsApp"
               >
-                <MessageCircle className="w-4 h-4" />
-                <span>Chat on WhatsApp</span>
+                <MessageCircle className="w-4 h-4 text-white" />
+              </a>
+
+              {/* Twitter */}
+              <a
+                href="https://twitter.com/mgieducation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full border-2 border-yellow-400 bg-navy-900 hover:bg-[#1DA1F2] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-md"
+                title="Follow on Twitter / X"
+              >
+                <Twitter className="w-4 h-4 text-white" />
               </a>
             </div>
           </div>
