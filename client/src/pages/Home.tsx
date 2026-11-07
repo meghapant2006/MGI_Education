@@ -538,10 +538,10 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               <span>4.7 / 5.0 Star Rating on Justdial (63+ Verified Reviews)</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black">
-              Real Student Reviews & Feedback
+              Hear From Our Students
             </h2>
             <p className="text-sm text-slate-400 max-w-xl mx-auto">
-              Real testimonials submitted by students and parents on Justdial for MGI Computer & Academic Education (Mayur Vihar-3, Delhi).
+              Real student reviews from Justdial for MGI Computer & Academic Education (Mayur Vihar-3, Delhi) with an exceptional 4.7/5 rating.
             </p>
           </div>
 
@@ -555,8 +555,9 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                       <Star key={i} className="w-4 h-4 fill-amber-400" />
                     ))}
                   </div>
-                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded">
-                    Verified Justdial User
+                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded flex items-center space-x-1">
+                    <CheckCircle className="w-3 h-3" />
+                    <span>Justdial Verified</span>
                   </span>
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed italic">
@@ -564,11 +565,16 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                 </p>
               </div>
               <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
-                <div>
-                  <div className="font-bold text-white text-sm">Verified Student</div>
-                  <div className="text-slate-400 text-[11px]">Computer Course & Skills</div>
+                <div className="flex items-center space-x-2.5">
+                  <div className="w-9 h-9 rounded-full bg-amber-500/20 text-accent font-bold flex items-center justify-center text-xs shrink-0 border border-amber-500/30">
+                    VB
+                  </div>
+                  <div>
+                    <div className="font-bold text-white text-sm">Vaibhav Bisht</div>
+                    <div className="text-slate-400 text-[11px]">Verified Student • Justdial</div>
+                  </div>
                 </div>
-                <div className="text-amber-400 font-bold">5.0 / 5.0 ★</div>
+                <div className="text-amber-400 font-bold">5.0 ★</div>
               </div>
             </div>
 
@@ -581,8 +587,9 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                       <Star key={i} className="w-4 h-4 fill-amber-400" />
                     ))}
                   </div>
-                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded">
-                    Verified Justdial User
+                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded flex items-center space-x-1">
+                    <CheckCircle className="w-3 h-3" />
+                    <span>Justdial Verified</span>
                   </span>
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed italic">
@@ -590,11 +597,16 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                 </p>
               </div>
               <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
-                <div>
-                  <div className="font-bold text-white text-sm">Career Guidance Student</div>
-                  <div className="text-slate-400 text-[11px]">Career Counseling & IT</div>
+                <div className="flex items-center space-x-2.5">
+                  <div className="w-9 h-9 rounded-full bg-blue-500/20 text-blue-300 font-bold flex items-center justify-center text-xs shrink-0 border border-blue-500/30">
+                    V
+                  </div>
+                  <div>
+                    <div className="font-bold text-white text-sm">Vivek</div>
+                    <div className="text-slate-400 text-[11px]">Verified Student • Justdial</div>
+                  </div>
                 </div>
-                <div className="text-amber-400 font-bold">5.0 / 5.0 ★</div>
+                <div className="text-amber-400 font-bold">5.0 ★</div>
               </div>
             </div>
 
@@ -607,8 +619,9 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                       <Star key={i} className="w-4 h-4 fill-amber-400" />
                     ))}
                   </div>
-                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded">
-                    Verified Justdial User
+                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded flex items-center space-x-1">
+                    <CheckCircle className="w-3 h-3" />
+                    <span>Justdial Verified</span>
                   </span>
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed italic">
@@ -616,11 +629,16 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                 </p>
               </div>
               <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
-                <div>
-                  <div className="font-bold text-white text-sm">Admission Aspirant</div>
-                  <div className="text-slate-400 text-[11px]">NIOS & Degree Admissions</div>
+                <div className="flex items-center space-x-2.5">
+                  <div className="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-300 font-bold flex items-center justify-center text-xs shrink-0 border border-emerald-500/30">
+                    DC
+                  </div>
+                  <div>
+                    <div className="font-bold text-white text-sm">Deepak Chauhan</div>
+                    <div className="text-slate-400 text-[11px]">Verified Student • Justdial</div>
+                  </div>
                 </div>
-                <div className="text-amber-400 font-bold">5.0 / 5.0 ★</div>
+                <div className="text-amber-400 font-bold">5.0 ★</div>
               </div>
             </div>
           </div>
