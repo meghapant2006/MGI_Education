@@ -16,8 +16,8 @@ import {
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-navy-950 text-slate-300 pt-12 sm:pt-16 pb-24 sm:pb-12 border-t border-navy-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10">
+      <div className="container-responsive">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 2xl:gap-14">
           {/* Col 1 & 2: Brand Information */}
           <div className="sm:col-span-2 lg:col-span-2 space-y-4">
             <div className="inline-block bg-white px-3.5 py-2 rounded-2xl shadow-md">

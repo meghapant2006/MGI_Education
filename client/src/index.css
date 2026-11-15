@@ -26,6 +26,46 @@ body {
   width: 100%;
 }
 
+/* Responsive Container System for all viewports from mobile (320px) to ultra-wide (2560px+) */
+.container-responsive {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-responsive {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 1680px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-responsive {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 1820px;
+  }
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

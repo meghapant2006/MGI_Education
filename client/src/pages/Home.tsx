@@ -51,30 +51,30 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
   return (
     <div className="space-y-20 pb-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-navy-950 via-navy-900 to-brand-950 text-white pt-16 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-navy-950 via-navy-900 to-brand-950 text-white pt-12 sm:pt-16 2xl:pt-24 pb-16 sm:pb-24 2xl:pb-32 overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-500 blur-3xl"></div>
-          <div className="absolute bottom-0 left-10 w-80 h-80 rounded-full bg-accent blur-3xl"></div>
+          <div className="absolute -top-24 -right-24 w-96 2xl:w-[36rem] h-96 2xl:h-[36rem] rounded-full bg-brand-500 blur-3xl"></div>
+          <div className="absolute bottom-0 left-10 w-80 2xl:w-[32rem] h-80 2xl:h-[32rem] rounded-full bg-accent blur-3xl"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="container-responsive relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 2xl:gap-16 items-center">
             {/* Left Column: Value Proposition */}
-            <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 text-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
+            <div className="lg:col-span-7 space-y-6 2xl:space-y-8 text-center lg:text-left">
+              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 text-accent px-4 py-1.5 2xl:px-5 2xl:py-2 rounded-full text-xs 2xl:text-sm font-bold uppercase tracking-wider">
+                <Sparkles className="w-3.5 h-3.5 2xl:w-4 2xl:h-4" />
                 <span>Admissions & New Batches Open for 2026-2027</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15]">
+              <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black tracking-tight leading-[1.12]">
                 Your Education, <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-amber-300 to-brand-300">
                   Our Expert Guidance.
                 </span>
               </h1>
 
-              <p className="text-sm sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-sm sm:text-base md:text-lg 2xl:text-xl text-slate-300 leading-relaxed max-w-2xl 2xl:max-w-3xl mx-auto lg:mx-0">
                 Delhi's premier institute for <strong className="text-white font-semibold">UGC-DEB Approved University Degrees</strong>,{' '}
                 <strong className="text-white font-semibold">NIOS 10th & 12th Board Admissions</strong>, and{' '}
                 <strong className="text-white font-semibold">Job-Oriented Professional Computer Courses</strong> (ADCA, Tally Prime + GST, Graphic & Web Designing).
@@ -84,45 +84,45 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2">
                 <button
                   onClick={() => onOpenEnquiry()}
-                  className="bg-accent hover:bg-accent-hover text-navy-950 font-black px-6 sm:px-7 py-3.5 rounded-xl text-sm sm:text-base shadow-xl hover:shadow-accent/20 transition transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center space-x-2"
+                  className="bg-accent hover:bg-accent-hover text-navy-950 font-black px-6 sm:px-7 2xl:px-9 py-3.5 2xl:py-4 rounded-xl text-sm sm:text-base 2xl:text-lg shadow-xl hover:shadow-accent/20 transition transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center space-x-2"
                 >
                   <span>Apply for Admission</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 2xl:w-5 2xl:h-5" />
                 </button>
 
                 <a
                   href="https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20want%20to%20know%20about%20admissions."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl text-sm sm:text-base shadow-lg transition flex items-center justify-center space-x-2"
+                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 2xl:px-8 2xl:py-4 rounded-xl text-sm sm:text-base 2xl:text-lg shadow-lg transition flex items-center justify-center space-x-2"
                 >
-                  <MessageCircle className="w-5 h-5" />
+                  <MessageCircle className="w-5 h-5 2xl:w-6 2xl:h-6" />
                   <span>Chat on WhatsApp</span>
                 </a>
               </div>
 
               {/* Trust Badges */}
-              <div className="pt-6 border-t border-white/10 grid grid-cols-3 gap-2 sm:gap-4 text-center lg:text-left">
+              <div className="pt-6 border-t border-white/10 grid grid-cols-3 gap-2 sm:gap-4 text-center lg:text-left max-w-xl 2xl:max-w-2xl">
                 <div>
-                  <div className="text-xl sm:text-3xl font-black text-white">
+                  <div className="text-xl sm:text-3xl 2xl:text-4xl font-black text-white">
                     <AnimatedCounter target={5000} duration={1500} suffix="+" />
                   </div>
-                  <div className="text-[11px] sm:text-xs text-slate-400 font-medium">Students Guided</div>
+                  <div className="text-[11px] sm:text-xs 2xl:text-sm text-slate-400 font-medium">Students Guided</div>
                 </div>
                 <div>
-                  <div className="text-xl sm:text-3xl font-black text-white">100%</div>
-                  <div className="text-[11px] sm:text-xs text-slate-400 font-medium">Valid & Recognized</div>
+                  <div className="text-xl sm:text-3xl 2xl:text-4xl font-black text-white">100%</div>
+                  <div className="text-[11px] sm:text-xs 2xl:text-sm text-slate-400 font-medium">Valid & Recognized</div>
                 </div>
                 <div>
-                  <div className="text-xl sm:text-3xl font-black text-white">10+ Yrs</div>
-                  <div className="text-[11px] sm:text-xs text-slate-400 font-medium">Legacy</div>
+                  <div className="text-xl sm:text-3xl 2xl:text-4xl font-black text-white">10+ Yrs</div>
+                  <div className="text-[11px] sm:text-xs 2xl:text-sm text-slate-400 font-medium">Legacy</div>
                 </div>
               </div>
             </div>
 
             {/* Right Column: Instant Course Finder & Lead Card */}
-            <div className="lg:col-span-5 w-full max-w-lg mx-auto lg:max-w-none">
-              <div className="bg-white text-slate-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl border border-slate-100">
+            <div className="lg:col-span-5 w-full max-w-lg 2xl:max-w-xl mx-auto lg:max-w-none">
+              <div className="bg-white text-slate-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 2xl:p-10 shadow-2xl border border-slate-100">
                 <div className="flex items-center space-x-3 mb-6">
                   <div className="w-12 h-12 bg-brand-100 rounded-2xl flex items-center justify-center text-brand-600">
                     <Search className="w-6 h-6" />
@@ -216,22 +216,22 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
       </section>
 
       {/* 3 Main Institutional Pillars */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="text-xs font-bold text-brand-600 uppercase tracking-wider">
+      <section className="container-responsive">
+        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto mb-12 2xl:mb-16 space-y-3">
+          <div className="text-xs 2xl:text-sm font-bold text-brand-600 uppercase tracking-wider">
             Our Core Specializations
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900">
+          <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-black text-slate-900">
             Three Pathways to Your Success
           </h2>
-          <p className="text-slate-600 text-base">
+          <p className="text-slate-600 text-sm sm:text-base 2xl:text-lg">
             Whether you want a recognized university degree, need to pass school board exams through open schooling, or want job-ready computer skills, MGI Education provides complete end-to-end support.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 2xl:gap-10">
           {/* Pillar 1 */}
-          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 2xl:p-10 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-5">
               <div className="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
                 <GraduationCap className="w-7 h-7" />
@@ -266,7 +266,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
           </div>
 
           {/* Pillar 2 */}
-          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 2xl:p-10 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-5">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 text-accent flex items-center justify-center">
                 <BookOpen className="w-7 h-7" />
@@ -308,7 +308,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
           </div>
 
           {/* Pillar 3 */}
-          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-1">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 2xl:p-10 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-1">
             <div className="space-y-5">
               <div className="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
                 <Monitor className="w-7 h-7" />
@@ -345,14 +345,14 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
       </section>
 
       {/* Featured Courses Showcase */}
-      <section className="bg-slate-100/70 py-16 px-4 sm:px-6 lg:px-8 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto space-y-10">
+      <section className="bg-slate-100/70 py-16 2xl:py-24 border-y border-slate-200">
+        <div className="container-responsive space-y-10 2xl:space-y-14">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
             <div>
-              <div className="text-xs font-bold text-brand-600 uppercase tracking-wider">
+              <div className="text-xs 2xl:text-sm font-bold text-brand-600 uppercase tracking-wider">
                 Most In-Demand Programs
               </div>
-              <h2 className="text-3xl font-black text-slate-900 mt-1">
+              <h2 className="text-2xl sm:text-3xl 2xl:text-4xl font-black text-slate-900 mt-1">
                 Featured Courses & Admissions
               </h2>
             </div>
@@ -373,11 +373,11 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:gap-8">
             {featuredCourses.slice(0, 6).map((course) => (
               <div
                 key={course._id}
-                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col justify-between"
+                className="bg-white rounded-2xl p-5 sm:p-6 2xl:p-8 border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col justify-between"
               >
                 <div className="space-y-4">
                   <div className="flex justify-between items-start">
@@ -429,23 +429,23 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
       </section>
 
       {/* Online Certificate Verification Teaser Banner */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-navy-900 to-brand-900 rounded-2xl sm:rounded-3xl p-6 sm:p-12 text-white shadow-xl relative overflow-hidden">
+      <section className="container-responsive">
+        <div className="bg-gradient-to-r from-navy-900 to-brand-900 rounded-2xl sm:rounded-3xl p-6 sm:p-10 2xl:p-14 text-white shadow-xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center space-x-1.5 bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-xs font-bold">
                 <ShieldCheck className="w-4 h-4" />
                 <span>Instant Online Credential Verification</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-black">
+              <h2 className="text-2xl sm:text-3xl 2xl:text-4xl font-black">
                 Verify Student Enrollment & Certificates
               </h2>
-              <p className="text-sm text-slate-300 max-w-xl">
+              <p className="text-sm 2xl:text-base text-slate-300 max-w-xl 2xl:max-w-2xl">
                 Students, employers, and verification agencies can instantly check the authenticity of completion certificates and roll numbers issued by MGI Education.
               </p>
             </div>
 
-            <div className="lg:col-span-5 bg-white/10 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/20">
+            <div className="lg:col-span-5 bg-white/10 backdrop-blur-md p-5 sm:p-6 2xl:p-8 rounded-2xl border border-white/20">
               <label className="block text-xs font-bold text-slate-200 mb-2">
                 Enter Roll No. or Certificate No:
               </label>
@@ -473,56 +473,56 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
       </section>
 
       {/* Why Choose MGI Education */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="text-xs font-bold text-brand-600 uppercase tracking-wider">
+      <section className="container-responsive">
+        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto mb-12 2xl:mb-16 space-y-3">
+          <div className="text-xs 2xl:text-sm font-bold text-brand-600 uppercase tracking-wider">
             Why Students Trust Us
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900">
+          <h2 className="text-2xl sm:text-3xl 2xl:text-4xl font-black text-slate-900">
             Dedicated Support At Every Step
           </h2>
-          <p className="text-slate-600 text-base">
+          <p className="text-slate-600 text-sm sm:text-base 2xl:text-lg">
             We do not just hand over a prospectus; our full-time academic counselors guide you until you receive your marksheet and degree.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 2xl:gap-8">
+          <div className="bg-white p-6 2xl:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
             <div className="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
               <Award className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-slate-900 text-base">Recognized Certifications</h4>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <h4 className="font-bold text-slate-900 text-base 2xl:text-lg">Recognized Certifications</h4>
+            <p className="text-xs 2xl:text-sm text-slate-600 leading-relaxed">
               All degrees and certifications are backed by UGC-DEB recognized partner universities and govt registered credentials.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div className="bg-white p-6 2xl:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
             <div className="w-12 h-12 rounded-xl bg-amber-50 text-accent flex items-center justify-center">
               <Clock className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-slate-900 text-base">Flexible Batches & Exams</h4>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <h4 className="font-bold text-slate-900 text-base 2xl:text-lg">Flexible Batches & Exams</h4>
+            <p className="text-xs 2xl:text-sm text-slate-600 leading-relaxed">
               Morning, afternoon, evening, and weekend batches designed for working students and busy professionals.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div className="bg-white p-6 2xl:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
             <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
               <Users className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-slate-900 text-base">1:1 Practical Mentorship</h4>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <h4 className="font-bold text-slate-900 text-base 2xl:text-lg">1:1 Practical Mentorship</h4>
+            <p className="text-xs 2xl:text-sm text-slate-600 leading-relaxed">
               Personalized computer lab practicals with individual PC stations, real project files, and step-by-step guidance.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div className="bg-white p-6 2xl:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
             <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
               <ShieldCheck className="w-6 h-6" />
             </div>
-            <h4 className="font-bold text-slate-900 text-base">Affordable Installments</h4>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <h4 className="font-bold text-slate-900 text-base 2xl:text-lg">Affordable Installments</h4>
+            <p className="text-xs 2xl:text-sm text-slate-600 leading-relaxed">
               Transparent, low fee structure with interest-free installment options to ensure every aspiring student can study.
             </p>
           </div>
@@ -530,8 +530,8 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
       </section>
 
       {/* Real Verified Student Reviews from Justdial */}
-      <section className="bg-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-10">
+      <section className="bg-slate-900 text-white py-16 2xl:py-24">
+        <div className="container-responsive space-y-10 2xl:space-y-14">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <div className="inline-flex items-center space-x-1.5 bg-amber-500/20 text-amber-300 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
               <Star className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
@@ -659,8 +659,8 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
       </section>
 
       {/* Direct Contact & Visit Banner */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-12 border border-slate-200 shadow-md">
+      <section className="container-responsive">
+        <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 2xl:p-14 border border-slate-200 shadow-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="text-xs font-bold text-brand-600 uppercase tracking-wider">

@@ -240,8 +240,8 @@ export const AdminDashboard: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-100 pb-20">
       {/* Top Header */}
-      <header className="bg-navy-950 text-white py-4 px-4 sm:px-8 shadow-md">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <header className="bg-navy-950 text-white py-4 shadow-md">
+        <div className="container-responsive flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="flex items-center space-x-3">
             <div className="bg-white px-2 py-1 rounded-xl shrink-0">
               <img src="/logo.png" alt="MGI Logo" className="h-9 w-auto object-contain" />
@@ -282,7 +282,7 @@ export const AdminDashboard: React.FC = () => {
       </header>
 
       {/* KPI Cards */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-8">
+      <div className="container-responsive pt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
             <div>

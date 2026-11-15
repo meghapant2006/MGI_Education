@@ -65,8 +65,8 @@ export const VerifyCertificate: React.FC = () => {
   return (
     <div className="space-y-12 pb-20">
       {/* Header Banner */}
-      <section className="bg-gradient-to-r from-navy-950 via-slate-900 to-brand-950 text-white py-14 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center space-y-4">
+      <section className="bg-gradient-to-r from-navy-950 via-slate-900 to-brand-950 text-white py-14 2xl:py-20">
+        <div className="container-responsive text-center space-y-4">
           <div className="inline-flex items-center space-x-1.5 bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4" />
             <span>Official Credential Registry</span>

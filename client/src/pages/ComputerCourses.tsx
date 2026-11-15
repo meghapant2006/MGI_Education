@@ -53,8 +53,8 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
   return (
     <div className="space-y-14 pb-20">
       {/* Hero Header */}
-      <section className="bg-gradient-to-r from-emerald-950 via-slate-900 to-navy-950 text-white py-14 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-4">
+      <section className="bg-gradient-to-r from-emerald-950 via-slate-900 to-navy-950 text-white py-14 2xl:py-20">
+        <div className="container-responsive space-y-4">
           <div className="inline-flex items-center space-x-2 bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
             <Cpu className="w-3.5 h-3.5" />
             <span>MGI Computer Training Institute (Mayur Vihar-3, Delhi)</span>
@@ -104,7 +104,7 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
       </section>
 
       {/* Search Bar & Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container-responsive">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm mb-8">
           <div className="text-sm font-bold text-slate-800">
             Available Computer Programs ({filtered.length})
@@ -233,7 +233,7 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
       </section>
 
       {/* Lab Infrastructure Features */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container-responsive">
         <div className="bg-navy-950 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-12 space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <div className="text-xs font-bold text-accent uppercase tracking-wider">

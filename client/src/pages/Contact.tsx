@@ -57,8 +57,8 @@ export const Contact: React.FC = () => {
   return (
     <div className="space-y-14 pb-20">
       {/* Header */}
-      <section className="bg-gradient-to-r from-navy-950 via-slate-900 to-brand-950 text-white py-14 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-4">
+      <section className="bg-gradient-to-r from-navy-950 via-slate-900 to-brand-950 text-white py-14 2xl:py-20">
+        <div className="container-responsive space-y-4">
           <div className="inline-flex items-center space-x-1.5 bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
             <MapPin className="w-3.5 h-3.5" />
             <span>Mayur Vihar Phase-3, Delhi</span>
@@ -75,7 +75,7 @@ export const Contact: React.FC = () => {
       </section>
 
       {/* Main Grid: Details + Form */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container-responsive">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* Left: Contact Info */}
           <div className="lg:col-span-5 space-y-6">

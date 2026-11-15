@@ -55,8 +55,8 @@ export const UniversityCourses: React.FC<UniversityCoursesProps> = ({ onOpenEnqu
   return (
     <div className="space-y-12 pb-20">
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-navy-950 via-navy-900 to-brand-950 text-white py-14 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-4">
+      <section className="bg-gradient-to-r from-navy-950 via-navy-900 to-brand-950 text-white py-14 2xl:py-20">
+        <div className="container-responsive space-y-4">
           <div className="inline-flex items-center space-x-2 bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
             <Award className="w-3.5 h-3.5" />
             <span>UGC-DEB Recognized University Degree Guidance</span>
@@ -86,7 +86,7 @@ export const UniversityCourses: React.FC<UniversityCoursesProps> = ({ onOpenEnqu
       </section>
 
       {/* Main Content & Catalog */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container-responsive">
         {/* Filters and Search Bar */}
         <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4 bg-white p-3 sm:p-4 rounded-2xl border border-slate-200 shadow-sm mb-8">
           <div className="flex bg-slate-100 p-1 rounded-xl overflow-x-auto touch-scroll no-scrollbar">
@@ -260,7 +260,7 @@ export const UniversityCourses: React.FC<UniversityCoursesProps> = ({ onOpenEnqu
       </section>
 
       {/* Counseling Banner */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container-responsive">
         <div className="bg-brand-50 border border-brand-200 rounded-3xl p-8 text-center space-y-4">
           <h3 className="text-2xl font-bold text-brand-950">
             Unsure Which Degree Suits Your Career Aspirations?

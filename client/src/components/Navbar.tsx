@@ -23,19 +23,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
     <header className="sticky top-0 z-40 w-full shadow-sm bg-white">
       {/* Main Navigation Bar */}
       <nav className="bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 sm:h-20">
+        <div className="container-responsive">
+          <div className="flex justify-between items-center h-16 sm:h-20 2xl:h-24">
             {/* Institute Logo */}
             <Link to="/" className="flex items-center py-1 group">
               <img
                 src="/logo.png"
                 alt="MGI Education"
-                className="h-12 sm:h-16 w-auto object-contain transition duration-200 group-hover:scale-[1.02]"
+                className="h-12 sm:h-16 2xl:h-20 w-auto object-contain transition duration-200 group-hover:scale-[1.02]"
               />
             </Link>
 
             {/* Desktop Navigation Links - Bold Text Only (No Icons) */}
-            <div className="hidden xl:flex items-center space-x-6 2xl:space-x-8">
+            <div className="hidden xl:flex items-center space-x-6 2xl:space-x-10 text-[15px] 2xl:text-base">
               <Link
                 to="/"
                 className={`font-bold text-[15px] transition tracking-normal ${
@@ -134,7 +134,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
             <div className="hidden xl:flex items-center space-x-3">
               <button
                 onClick={() => onOpenEnquiry()}
-                className="bg-brand-600 hover:bg-brand-700 text-white px-6 py-2.5 rounded-xl text-sm font-extrabold shadow-md hover:shadow-lg transition transform active:scale-95"
+                className="bg-brand-600 hover:bg-brand-700 text-white px-6 py-2.5 2xl:px-8 2xl:py-3.5 rounded-xl text-sm 2xl:text-base font-extrabold shadow-md hover:shadow-lg transition transform active:scale-95"
               >
                 Enquire Now
               </button>
@@ -224,13 +224,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp Counselor</span>
               </a>
-              <Link
-                to="/admin/login"
-                onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center text-xs text-slate-500 hover:text-slate-800 py-2 font-medium"
-              >
-                Staff Portal
-              </Link>
             </div>
           </div>
         )}

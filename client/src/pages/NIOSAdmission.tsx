@@ -20,8 +20,8 @@ export const NIOSAdmission: React.FC<NIOSAdmissionProps> = ({ onOpenEnquiry }) =
   return (
     <div className="space-y-16 pb-20">
       {/* Hero Header */}
-      <section className="bg-gradient-to-r from-amber-950 via-slate-900 to-navy-950 text-white py-14 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-4">
+      <section className="bg-gradient-to-r from-amber-950 via-slate-900 to-navy-950 text-white py-14 2xl:py-20">
+        <div className="container-responsive space-y-4">
           <div className="inline-flex items-center space-x-2 bg-amber-500/20 text-amber-300 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>Govt. of India Recognized Autonomous Open Board</span>
@@ -71,7 +71,7 @@ export const NIOSAdmission: React.FC<NIOSAdmissionProps> = ({ onOpenEnquiry }) =
       </section>
 
       {/* Class 10th vs 12th Selection Tabs */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container-responsive">
         <div className="flex justify-center mb-10">
           <div className="bg-slate-100 p-1.5 rounded-2xl flex flex-col sm:flex-row gap-2 border border-slate-200 w-full sm:w-auto">
             <button
@@ -274,7 +274,7 @@ export const NIOSAdmission: React.FC<NIOSAdmissionProps> = ({ onOpenEnquiry }) =
       </section>
 
       {/* Document Checklist */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container-responsive">
         <div className="bg-slate-100/80 rounded-2xl sm:rounded-3xl p-6 sm:p-12 border border-slate-200 space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <FileCheck className="w-10 h-10 text-brand-600 mx-auto" />
