@@ -340,22 +340,22 @@ export const AdminDashboard: React.FC = () => {
         </div>
 
         {/* Navigation Tabs */}
-        <div className="flex border-b border-slate-200 mt-8 space-x-2">
+        <div className="flex border-b border-slate-200 mt-8 space-x-2 overflow-x-auto touch-scroll no-scrollbar pb-1">
           <button
             onClick={() => setActiveTab('leads')}
-            className={`py-3 px-5 font-bold text-sm border-b-2 transition flex items-center space-x-2 ${
+            className={`py-3 px-4 sm:px-5 font-bold text-xs sm:text-sm border-b-2 transition flex items-center space-x-2 shrink-0 whitespace-nowrap ${
               activeTab === 'leads'
                 ? 'border-brand-600 text-brand-600 bg-white rounded-t-xl'
                 : 'border-transparent text-slate-600 hover:text-slate-900'
             }`}
           >
             <Users className="w-4 h-4" />
-            <span>Admission Inquiries CRM ({totalLeads})</span>
+            <span>Admission Inquiries ({totalLeads})</span>
           </button>
 
           <button
             onClick={() => setActiveTab('courses')}
-            className={`py-3 px-5 font-bold text-sm border-b-2 transition flex items-center space-x-2 ${
+            className={`py-3 px-4 sm:px-5 font-bold text-xs sm:text-sm border-b-2 transition flex items-center space-x-2 shrink-0 whitespace-nowrap ${
               activeTab === 'courses'
                 ? 'border-brand-600 text-brand-600 bg-white rounded-t-xl'
                 : 'border-transparent text-slate-600 hover:text-slate-900'
@@ -367,7 +367,7 @@ export const AdminDashboard: React.FC = () => {
 
           <button
             onClick={() => setActiveTab('certificates')}
-            className={`py-3 px-5 font-bold text-sm border-b-2 transition flex items-center space-x-2 ${
+            className={`py-3 px-4 sm:px-5 font-bold text-xs sm:text-sm border-b-2 transition flex items-center space-x-2 shrink-0 whitespace-nowrap ${
               activeTab === 'certificates'
                 ? 'border-brand-600 text-brand-600 bg-white rounded-t-xl'
                 : 'border-transparent text-slate-600 hover:text-slate-900'
@@ -379,7 +379,7 @@ export const AdminDashboard: React.FC = () => {
 
           <button
             onClick={() => setActiveTab('notices')}
-            className={`py-3 px-5 font-bold text-sm border-b-2 transition flex items-center space-x-2 ${
+            className={`py-3 px-4 sm:px-5 font-bold text-xs sm:text-sm border-b-2 transition flex items-center space-x-2 shrink-0 whitespace-nowrap ${
               activeTab === 'notices'
                 ? 'border-brand-600 text-brand-600 bg-white rounded-t-xl'
                 : 'border-transparent text-slate-600 hover:text-slate-900'
@@ -679,8 +679,8 @@ export const AdminDashboard: React.FC = () => {
 
             {/* Add Course Modal */}
             {showAddCourse && (
-              <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                <div className="bg-white rounded-2xl max-w-md w-full p-6 space-y-4">
+              <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+                <div className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 space-y-4 my-auto max-h-[90vh] overflow-y-auto">
                   <div className="flex justify-between items-center">
                     <h4 className="font-bold text-slate-900">Add New Course</h4>
                     <button onClick={() => setShowAddCourse(false)}><X className="w-5 h-5 text-slate-400" /></button>
@@ -835,8 +835,8 @@ export const AdminDashboard: React.FC = () => {
 
             {/* Add Certificate Modal */}
             {showAddCert && (
-              <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                <div className="bg-white rounded-2xl max-w-md w-full p-6 space-y-4">
+              <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+                <div className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 space-y-4 my-auto max-h-[90vh] overflow-y-auto">
                   <div className="flex justify-between items-center">
                     <h4 className="font-bold text-slate-900">Issue Student Certificate</h4>
                     <button onClick={() => setShowAddCert(false)}><X className="w-5 h-5 text-slate-400" /></button>
@@ -973,8 +973,8 @@ export const AdminDashboard: React.FC = () => {
 
             {/* Add Notice Modal */}
             {showAddNotice && (
-              <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                <div className="bg-white rounded-2xl max-w-md w-full p-6 space-y-4">
+              <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+                <div className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 space-y-4 my-auto max-h-[90vh] overflow-y-auto">
                   <div className="flex justify-between items-center">
                     <h4 className="font-bold text-slate-900">Post Announcement</h4>
                     <button onClick={() => setShowAddNotice(false)}><X className="w-5 h-5 text-slate-400" /></button>

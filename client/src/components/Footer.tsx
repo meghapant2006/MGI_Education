@@ -15,7 +15,7 @@ import {
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-navy-950 text-slate-300 pt-16 pb-12 border-t border-navy-800">
+    <footer className="bg-navy-950 text-slate-300 pt-12 sm:pt-16 pb-24 sm:pb-12 border-t border-navy-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Col 1 & 2: Brand Information */}
@@ -237,9 +237,9 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-6 border-t border-navy-900 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 space-y-4 md:space-y-0">
+        <div className="mt-12 pt-6 border-t border-navy-900 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 space-y-4 md:space-y-0 text-center md:text-left">
           <p>© {new Date().getFullYear()} MGI Education. All Rights Reserved. Delhi, India.</p>
-          <div className="flex items-center space-x-6">
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
             <span>Center Timings: Mon - Sat: 9:00 AM - 7:00 PM</span>
             <Link to="/admin/login" className="text-slate-400 hover:text-slate-200 transition">
               Admin Portal

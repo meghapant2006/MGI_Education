@@ -24,10 +24,13 @@ export const FloatingCTA: React.FC<FloatingCTAProps> = ({ onOpenEnquiry }) => {
       </div>
 
       {/* Sticky Mobile Bottom Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 py-2 px-3 flex sm:hidden items-center justify-around shadow-2xl">
+      <div
+        className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 py-2 px-3 flex sm:hidden items-center justify-around shadow-2xl"
+        style={{ paddingBottom: 'max(0.5rem, env(safe-area-inset-bottom))' }}
+      >
         <a
           href="tel:+918929909708"
-          className="flex-1 flex flex-col items-center justify-center py-1 text-slate-700 active:text-brand-600"
+          className="flex-1 flex flex-col items-center justify-center py-1 min-h-[44px] text-slate-700 active:text-brand-600 transition"
         >
           <Phone className="w-5 h-5 text-brand-600 mb-0.5" />
           <span className="text-[11px] font-bold">Call Now</span>
@@ -37,7 +40,7 @@ export const FloatingCTA: React.FC<FloatingCTAProps> = ({ onOpenEnquiry }) => {
           href="https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20want%20admission%20details."
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 flex flex-col items-center justify-center py-1 text-emerald-600 font-bold"
+          className="flex-1 flex flex-col items-center justify-center py-1 min-h-[44px] text-emerald-600 font-bold transition"
         >
           <MessageCircle className="w-5 h-5 mb-0.5" />
           <span className="text-[11px]">WhatsApp</span>
@@ -45,7 +48,7 @@ export const FloatingCTA: React.FC<FloatingCTAProps> = ({ onOpenEnquiry }) => {
 
         <button
           onClick={onOpenEnquiry}
-          className="flex-1 flex flex-col items-center justify-center py-1 bg-brand-600 text-white rounded-lg font-bold shadow-md mx-1"
+          className="flex-1 flex flex-col items-center justify-center py-1 min-h-[44px] bg-brand-600 hover:bg-brand-700 active:scale-95 text-white rounded-xl font-bold shadow-md mx-1 transition"
         >
           <FileText className="w-4 h-4 mb-0.5" />
           <span className="text-[11px]">Enquire</span>

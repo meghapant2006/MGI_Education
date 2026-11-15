@@ -67,24 +67,24 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                 <span>Admissions & New Batches Open for 2026-2027</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15]">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15]">
                 Your Education, <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-amber-300 to-brand-300">
                   Our Expert Guidance.
                 </span>
               </h1>
 
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-sm sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Delhi's premier institute for <strong className="text-white font-semibold">UGC-DEB Approved University Degrees</strong>,{' '}
                 <strong className="text-white font-semibold">NIOS 10th & 12th Board Admissions</strong>, and{' '}
                 <strong className="text-white font-semibold">Job-Oriented Professional Computer Courses</strong> (ADCA, Tally Prime + GST, Graphic & Web Designing).
               </p>
 
               {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2">
                 <button
                   onClick={() => onOpenEnquiry()}
-                  className="bg-accent hover:bg-accent-hover text-navy-950 font-black px-7 py-3.5 rounded-xl text-base shadow-xl hover:shadow-accent/20 transition transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center space-x-2"
+                  className="bg-accent hover:bg-accent-hover text-navy-950 font-black px-6 sm:px-7 py-3.5 rounded-xl text-sm sm:text-base shadow-xl hover:shadow-accent/20 transition transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center space-x-2"
                 >
                   <span>Apply for Admission</span>
                   <ArrowRight className="w-4 h-4" />
@@ -94,7 +94,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                   href="https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20want%20to%20know%20about%20admissions."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl text-base shadow-lg transition flex items-center justify-center space-x-2"
+                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl text-sm sm:text-base shadow-lg transition flex items-center justify-center space-x-2"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>Chat on WhatsApp</span>
@@ -102,27 +102,27 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               </div>
 
               {/* Trust Badges */}
-              <div className="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-center lg:text-left">
+              <div className="pt-6 border-t border-white/10 grid grid-cols-3 gap-2 sm:gap-4 text-center lg:text-left">
                 <div>
-                  <div className="text-2xl sm:text-3xl font-black text-white">
+                  <div className="text-xl sm:text-3xl font-black text-white">
                     <AnimatedCounter target={5000} duration={1500} suffix="+" />
                   </div>
-                  <div className="text-xs text-slate-400 font-medium">Students Guided</div>
+                  <div className="text-[11px] sm:text-xs text-slate-400 font-medium">Students Guided</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-black text-white">100%</div>
-                  <div className="text-xs text-slate-400 font-medium">Valid & Recognized</div>
+                  <div className="text-xl sm:text-3xl font-black text-white">100%</div>
+                  <div className="text-[11px] sm:text-xs text-slate-400 font-medium">Valid & Recognized</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-black text-white">10+ Yrs</div>
-                  <div className="text-xs text-slate-400 font-medium">Educational Legacy</div>
+                  <div className="text-xl sm:text-3xl font-black text-white">10+ Yrs</div>
+                  <div className="text-[11px] sm:text-xs text-slate-400 font-medium">Legacy</div>
                 </div>
               </div>
             </div>
 
             {/* Right Column: Instant Course Finder & Lead Card */}
             <div className="lg:col-span-5">
-              <div className="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+              <div className="bg-white text-slate-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl border border-slate-100">
                 <div className="flex items-center space-x-3 mb-6">
                   <div className="w-12 h-12 bg-brand-100 rounded-2xl flex items-center justify-center text-brand-600">
                     <Search className="w-6 h-6" />
@@ -357,16 +357,16 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               </h2>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2 w-full sm:w-auto">
               <Link
                 to="/university-courses"
-                className="bg-white border border-slate-300 hover:border-brand-500 text-slate-700 px-4 py-2 rounded-lg text-xs font-bold transition"
+                className="flex-1 sm:flex-initial text-center bg-white border border-slate-300 hover:border-brand-500 text-slate-700 px-4 py-2 rounded-lg text-xs font-bold transition"
               >
                 All Degrees
               </Link>
               <Link
                 to="/computer-courses"
-                className="bg-white border border-slate-300 hover:border-brand-500 text-slate-700 px-4 py-2 rounded-lg text-xs font-bold transition"
+                className="flex-1 sm:flex-initial text-center bg-white border border-slate-300 hover:border-brand-500 text-slate-700 px-4 py-2 rounded-lg text-xs font-bold transition"
               >
                 All Computer Courses
               </Link>
@@ -377,7 +377,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
             {featuredCourses.slice(0, 6).map((course) => (
               <div
                 key={course._id}
-                className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col justify-between"
+                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col justify-between"
               >
                 <div className="space-y-4">
                   <div className="flex justify-between items-start">
@@ -430,7 +430,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
 
       {/* Online Certificate Verification Teaser Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-navy-900 to-brand-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+        <div className="bg-gradient-to-r from-navy-900 to-brand-900 rounded-2xl sm:rounded-3xl p-6 sm:p-12 text-white shadow-xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center space-x-1.5 bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-xs font-bold">
@@ -445,11 +445,11 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               </p>
             </div>
 
-            <div className="lg:col-span-5 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+            <div className="lg:col-span-5 bg-white/10 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/20">
               <label className="block text-xs font-bold text-slate-200 mb-2">
                 Enter Roll No. or Certificate No:
               </label>
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="text"
                   placeholder="e.g. MGI-2025-ADCA01"
@@ -459,7 +459,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                 />
                 <Link
                   to={`/verify-certificate?roll=${encodeURIComponent(verifyInput)}`}
-                  className="bg-accent hover:bg-accent-hover text-navy-950 font-bold px-5 py-2.5 rounded-xl text-sm shrink-0 transition flex items-center justify-center"
+                  className="bg-accent hover:bg-accent-hover text-navy-950 font-bold px-5 py-2.5 rounded-xl text-sm shrink-0 transition flex items-center justify-center text-center"
                 >
                   Verify
                 </Link>
@@ -660,13 +660,13 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
 
       {/* Direct Contact & Visit Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-md">
+        <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-12 border border-slate-200 shadow-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="text-xs font-bold text-brand-600 uppercase tracking-wider">
                 Visit Our Center in Delhi
               </div>
-              <h2 className="text-3xl font-black text-slate-900">
+              <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
                 Have Questions? Talk to an Academic Counselor Today
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -674,21 +674,21 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               </p>
 
               <div className="space-y-2 text-sm text-slate-700 font-medium pt-2">
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-accent shrink-0" />
+                <div className="flex items-start space-x-3">
+                  <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                   <span>2nd Floor, A-1240, Opp. Bank of Baroda, GD Colony, Mayur Vihar-3, Delhi - 110096</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-emerald-600 shrink-0" />
-                  <span>+91 8929909708 / +91 9315522378</span>
+                  <a href="tel:+918929909708" className="hover:text-brand-600">+91 8929909708 / +91 9315522378</a>
                 </div>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-end w-full lg:w-auto">
               <button
                 onClick={() => onOpenEnquiry('General Counseling', 'general')}
-                className="bg-brand-600 hover:bg-brand-700 text-white font-bold px-7 py-4 rounded-xl text-sm shadow-md transition"
+                className="w-full sm:w-auto bg-brand-600 hover:bg-brand-700 text-white font-bold px-7 py-3.5 sm:py-4 rounded-xl text-sm shadow-md transition text-center"
               >
                 Book Free Counseling
               </button>
@@ -696,7 +696,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                 href="https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20want%20to%20visit%20your%20center."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-4 rounded-xl text-sm shadow-md transition flex items-center justify-center space-x-2"
+                className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3.5 sm:py-4 rounded-xl text-sm shadow-md transition flex items-center justify-center space-x-2 text-center"
               >
                 <MessageCircle className="w-5 h-5" />
                 <span>WhatsApp Counselor</span>

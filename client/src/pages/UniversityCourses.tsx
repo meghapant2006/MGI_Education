@@ -88,13 +88,13 @@ export const UniversityCourses: React.FC<UniversityCoursesProps> = ({ onOpenEnqu
       {/* Main Content & Catalog */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Filters and Search Bar */}
-        <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm mb-8">
-          <div className="flex bg-slate-100 p-1 rounded-xl">
+        <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4 bg-white p-3 sm:p-4 rounded-2xl border border-slate-200 shadow-sm mb-8">
+          <div className="flex bg-slate-100 p-1 rounded-xl overflow-x-auto touch-scroll no-scrollbar">
             {(['ALL', 'UG', 'PG'] as const).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-5 py-2 rounded-lg text-xs font-bold transition ${
+                className={`flex-1 sm:flex-initial whitespace-nowrap px-3 sm:px-5 py-2 rounded-lg text-xs font-bold transition text-center ${
                   activeTab === tab
                     ? 'bg-brand-600 text-white shadow-sm'
                     : 'text-slate-600 hover:text-slate-900'

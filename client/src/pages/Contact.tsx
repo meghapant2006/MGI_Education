@@ -79,7 +79,7 @@ export const Contact: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* Left: Contact Info */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+            <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-slate-200 shadow-sm space-y-6">
               <h2 className="text-xl font-bold text-slate-900 border-b border-slate-100 pb-3">
                 Center Information
               </h2>
@@ -133,7 +133,7 @@ export const Contact: React.FC = () => {
                 <span className="font-bold text-slate-900 block text-xs uppercase tracking-wider mb-3">
                   Follow & Connect With Us:
                 </span>
-                <div className="flex flex-row items-center space-x-3.5">
+                <div className="flex flex-wrap items-center gap-3">
                   {/* Instagram */}
                   <a
                     href="https://www.instagram.com/mgiclasses?igsh=cjU0b2l4a2c3ZHI3"
@@ -194,7 +194,7 @@ export const Contact: React.FC = () => {
             </div>
 
             {/* Embedded Google Map */}
-            <div className="bg-white rounded-3xl p-4 border border-slate-200 shadow-sm overflow-hidden">
+            <div className="bg-white rounded-2xl sm:rounded-3xl p-3 sm:p-4 border border-slate-200 shadow-sm overflow-hidden">
               <div className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 px-2">
                 Location Map (Mayur Vihar Phase-3)
               </div>
@@ -214,7 +214,7 @@ export const Contact: React.FC = () => {
 
           {/* Right: Message / Lead Form */}
           <div className="lg:col-span-7">
-            <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6">
+            <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-10 border border-slate-200 shadow-sm space-y-6">
               <div>
                 <span className="text-xs font-bold text-brand-600 uppercase tracking-wider">Online Admissions Desk</span>
                 <h2 className="text-2xl font-black text-slate-900 mt-1">Send Us a Direct Message</h2>

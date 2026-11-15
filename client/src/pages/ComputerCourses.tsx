@@ -137,9 +137,9 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
               return (
                 <div
                   key={course._id}
-                  className="bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition flex flex-col justify-between overflow-hidden"
+                  className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition flex flex-col justify-between overflow-hidden"
                 >
-                  <div className="p-6 sm:p-8 space-y-4">
+                  <div className="p-5 sm:p-8 space-y-4">
                     <div className="flex justify-between items-start">
                       <span className="text-[11px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-800">
                         {course.shortName}
@@ -198,7 +198,7 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
                     )}
                   </div>
 
-                  <div className="p-6 bg-slate-50/70 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+                  <div className="p-4 sm:p-6 bg-slate-50/70 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
                     <button
                       onClick={() => toggleExpand(course._id)}
                       className="text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center space-x-1"
@@ -234,7 +234,7 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
 
       {/* Lab Infrastructure Features */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-navy-950 text-white rounded-3xl p-8 sm:p-12 space-y-8">
+        <div className="bg-navy-950 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-12 space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <div className="text-xs font-bold text-accent uppercase tracking-wider">
               Computer Lab Infrastructure

@@ -67,28 +67,28 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-2xl border border-slate-100 w-full max-w-lg overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+      <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-100 w-full max-w-lg my-auto max-h-[92vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
         {/* Header */}
-        <div className="bg-gradient-to-r from-brand-900 to-navy-900 text-white p-6 relative">
+        <div className="bg-gradient-to-r from-brand-900 to-navy-900 text-white p-5 sm:p-6 relative shrink-0">
           <button
             onClick={onClose}
-            className="absolute top-5 right-5 text-slate-300 hover:text-white bg-white/10 hover:bg-white/20 p-1.5 rounded-full transition"
+            className="absolute top-4 right-4 sm:top-5 sm:right-5 text-slate-300 hover:text-white bg-white/10 hover:bg-white/20 p-2 rounded-full transition min-h-[40px] min-w-[40px] flex items-center justify-center"
             aria-label="Close modal"
           >
             <X className="w-5 h-5" />
           </button>
-          <div className="text-xs font-bold uppercase tracking-wider text-accent mb-1">
+          <div className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-accent mb-1 pr-8">
             Free Counseling & Admission Guidance
           </div>
-          <h3 className="text-xl font-bold">Apply / Enquire Now</h3>
-          <p className="text-xs text-slate-300 mt-1">
+          <h3 className="text-lg sm:text-xl font-bold">Apply / Enquire Now</h3>
+          <p className="text-xs text-slate-300 mt-1 max-w-sm">
             Get instant eligibility details, fee structure, and scholarship counseling.
           </p>
         </div>
 
         {/* Content */}
-        <div className="p-6">
+        <div className="p-5 sm:p-6 overflow-y-auto flex-1">
           {submittedRef ? (
             <div className="text-center py-6 space-y-4">
               <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">

@@ -24,13 +24,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
       {/* Main Navigation Bar */}
       <nav className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-16 sm:h-20">
             {/* Institute Logo */}
             <Link to="/" className="flex items-center py-1 group">
               <img
                 src="/logo.png"
                 alt="MGI Education"
-                className="h-16 w-auto object-contain transition duration-200 group-hover:scale-[1.02]"
+                className="h-12 sm:h-16 w-auto object-contain transition duration-200 group-hover:scale-[1.02]"
               />
             </Link>
 
@@ -161,7 +161,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
 
         {/* Mobile Slide-down Navigation - Text Only, No Emojis */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-2 animate-in slide-in-from-top-4 duration-200">
+          <div className="lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-2 animate-in slide-in-from-top-4 duration-200 max-h-[calc(100vh-4.5rem)] overflow-y-auto">
             <Link
               to="/"
               onClick={() => setMobileMenuOpen(false)}
@@ -222,6 +222,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp Counselor</span>
               </a>
+              <Link
+                to="/admin/login"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-center text-xs text-slate-400 hover:text-slate-700 py-2 font-medium"
+              >
+                Staff / Admin Login
+              </Link>
             </div>
           </div>
         )}

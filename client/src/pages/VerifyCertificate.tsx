@@ -84,7 +84,7 @@ export const VerifyCertificate: React.FC = () => {
 
       {/* Search Input Box */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
-        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xl space-y-4">
+        <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-slate-200 shadow-xl space-y-4">
           <form onSubmit={handleSearch} className="space-y-4">
             <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
               Enter Student Roll Number or Certificate ID:
@@ -154,21 +154,21 @@ export const VerifyCertificate: React.FC = () => {
         )}
 
         {result && (
-          <div className="bg-white rounded-3xl border-2 border-emerald-500 shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
+          <div className="bg-white rounded-2xl sm:rounded-3xl border-2 border-emerald-500 shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
             {/* Top Verified Seal Ribbon */}
-            <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-4 sm:p-6 flex items-center justify-between">
+            <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-4 sm:p-6 flex flex-wrap gap-3 items-center justify-between">
               <div className="flex items-center space-x-3">
-                <CheckCircle2 className="w-8 h-8 text-white" />
+                <CheckCircle2 className="w-7 h-7 sm:w-8 sm:h-8 text-white shrink-0" />
                 <div>
-                  <div className="text-[11px] font-black uppercase tracking-wider text-emerald-100">
+                  <div className="text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-emerald-100">
                     STATUS: AUTHENTIC & VERIFIED
                   </div>
-                  <div className="text-lg font-black">Official Certificate Verified</div>
+                  <div className="text-base sm:text-lg font-black">Official Certificate Verified</div>
                 </div>
               </div>
               <button
                 onClick={() => window.print()}
-                className="hidden sm:flex items-center space-x-1.5 bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition"
+                className="flex items-center space-x-1.5 bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition shrink-0"
               >
                 <Printer className="w-4 h-4" />
                 <span>Print Record</span>
@@ -176,7 +176,7 @@ export const VerifyCertificate: React.FC = () => {
             </div>
 
             {/* Certificate Details Body */}
-            <div className="p-6 sm:p-8 space-y-6">
+            <div className="p-5 sm:p-8 space-y-6">
               <div className="flex items-center justify-between border-b border-slate-100 pb-4">
                 <div className="flex items-center space-x-3">
                   <img src="/logo.png" alt="MGI Logo" className="h-12 w-auto object-contain" />
