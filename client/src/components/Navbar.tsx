@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   Phone,
-  Mail,
-  MapPin,
   MessageCircle,
   Menu,
   X,
@@ -23,44 +21,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
 
   return (
     <header className="sticky top-0 z-40 w-full shadow-sm bg-white">
-      {/* Top Utility Bar */}
-      <div className="bg-navy-900 text-slate-200 text-xs py-2 px-4 border-b border-navy-800 hidden md:block">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-6">
-            <span className="flex items-center space-x-1.5">
-              <MapPin className="w-3.5 h-3.5 text-accent" />
-              <span>A-1240, 2nd Floor, Mayur Vihar Phase-3, Delhi - 110096</span>
-            </span>
-            <span className="flex items-center space-x-1.5">
-              <Mail className="w-3.5 h-3.5 text-accent" />
-              <a href="mailto:mgi12345@gmail.com" className="hover:text-white transition">mgi12345@gmail.com</a>
-            </span>
-          </div>
-
-          <div className="flex items-center space-x-5">
-            <a
-              href="tel:+918929909708"
-              className="flex items-center space-x-1 text-slate-200 hover:text-white font-medium transition"
-            >
-              <Phone className="w-3.5 h-3.5 text-emerald-400" />
-              <span>+91 8929909708</span>
-            </a>
-            <a
-              href="https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20want%20admission%20details."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-0.5 rounded-full text-xs font-semibold transition"
-            >
-              <MessageCircle className="w-3.5 h-3.5" />
-              <span>Chat on WhatsApp</span>
-            </a>
-            <Link to="/admin/login" className="text-slate-400 hover:text-white transition text-xs font-medium">
-              Staff Portal
-            </Link>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navigation Bar */}
       <nav className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
