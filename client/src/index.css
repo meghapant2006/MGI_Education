@@ -26,9 +26,10 @@ body {
   width: 100%;
 }
 
-/* Responsive Container System for all viewports from mobile (320px) to ultra-wide (2560px+) */
+/* Full-screen fluid responsive container system for mobile, tablet, laptop, and desktop viewports */
 .container-responsive {
   width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -42,27 +43,38 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .container-responsive {
     padding-left: 2rem;
     padding-right: 2rem;
-    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-responsive {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 }
 
 @media (min-width: 1536px) {
   .container-responsive {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    max-width: 1680px;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 }
 
 @media (min-width: 1920px) {
   .container-responsive {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    max-width: 1820px;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
   }
 }
 

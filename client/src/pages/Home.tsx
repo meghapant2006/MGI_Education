@@ -74,7 +74,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
                 </span>
               </h1>
 
-              <p className="text-sm sm:text-base md:text-lg 2xl:text-xl text-slate-300 leading-relaxed max-w-2xl 2xl:max-w-3xl mx-auto lg:mx-0">
+              <p className="text-sm sm:text-base md:text-lg 2xl:text-xl text-slate-300 leading-relaxed max-w-3xl 2xl:max-w-4xl mx-auto lg:mx-0">
                 Delhi's premier institute for <strong className="text-white font-semibold">UGC-DEB Approved University Degrees</strong>,{' '}
                 <strong className="text-white font-semibold">NIOS 10th & 12th Board Admissions</strong>, and{' '}
                 <strong className="text-white font-semibold">Job-Oriented Professional Computer Courses</strong> (ADCA, Tally Prime + GST, Graphic & Web Designing).
@@ -102,7 +102,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               </div>
 
               {/* Trust Badges */}
-              <div className="pt-6 border-t border-white/10 grid grid-cols-3 gap-2 sm:gap-4 text-center lg:text-left max-w-xl 2xl:max-w-2xl">
+              <div className="pt-6 border-t border-white/10 grid grid-cols-3 gap-3 sm:gap-6 text-center lg:text-left max-w-2xl">
                 <div>
                   <div className="text-xl sm:text-3xl 2xl:text-4xl font-black text-white">
                     <AnimatedCounter target={5000} duration={1500} suffix="+" />
@@ -217,7 +217,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
 
       {/* 3 Main Institutional Pillars */}
       <section className="container-responsive">
-        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto mb-12 2xl:mb-16 space-y-3">
+        <div className="text-center max-w-4xl mx-auto mb-12 2xl:mb-16 space-y-3">
           <div className="text-xs 2xl:text-sm font-bold text-brand-600 uppercase tracking-wider">
             Our Core Specializations
           </div>
@@ -440,7 +440,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
               <h2 className="text-2xl sm:text-3xl 2xl:text-4xl font-black">
                 Verify Student Enrollment & Certificates
               </h2>
-              <p className="text-sm 2xl:text-base text-slate-300 max-w-xl 2xl:max-w-2xl">
+              <p className="text-sm 2xl:text-base text-slate-300 max-w-2xl 2xl:max-w-3xl">
                 Students, employers, and verification agencies can instantly check the authenticity of completion certificates and roll numbers issued by MGI Education.
               </p>
             </div>
@@ -474,7 +474,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
 
       {/* Why Choose MGI Education */}
       <section className="container-responsive">
-        <div className="text-center max-w-3xl 2xl:max-w-4xl mx-auto mb-12 2xl:mb-16 space-y-3">
+        <div className="text-center max-w-4xl mx-auto mb-12 2xl:mb-16 space-y-3">
           <div className="text-xs 2xl:text-sm font-bold text-brand-600 uppercase tracking-wider">
             Why Students Trust Us
           </div>
@@ -532,7 +532,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
       {/* Real Verified Student Reviews from Justdial */}
       <section className="bg-slate-900 text-white py-16 2xl:py-24">
         <div className="container-responsive space-y-10 2xl:space-y-14">
-          <div className="text-center max-w-3xl mx-auto space-y-3">
+          <div className="text-center max-w-4xl mx-auto space-y-3">
             <div className="inline-flex items-center space-x-1.5 bg-amber-500/20 text-amber-300 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
               <Star className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
               <span>4.7 / 5.0 Star Rating on Justdial (63+ Verified Reviews)</span>
@@ -540,7 +540,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
             <h2 className="text-3xl sm:text-4xl font-black">
               Hear From Our Students
             </h2>
-            <p className="text-sm text-slate-400 max-w-xl mx-auto">
+            <p className="text-sm text-slate-400 max-w-2xl mx-auto">
               Real student reviews from Justdial for MGI Computer & Academic Education (Mayur Vihar-3, Delhi) with an exceptional 4.7/5 rating.
             </p>
           </div>

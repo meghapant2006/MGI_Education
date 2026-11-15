@@ -143,7 +143,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   required
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
-                  placeholder="e.g. Manish Sharma"
+                  placeholder="e.g. Megha Pant"
                   className="w-full px-3.5 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none"
                 />
               </div>
