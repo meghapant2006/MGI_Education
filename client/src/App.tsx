@@ -36,7 +36,7 @@ export const App: React.FC = () => {
       )}
 
       {/* Main Page Content */}
-      <main className="flex-1">
+      <main className="flex-1 min-w-0">
         <Routes>
           <Route path="/" element={<Home onOpenEnquiry={handleOpenEnquiry} />} />
           <Route path="/university-courses" element={<UniversityCourses onOpenEnquiry={handleOpenEnquiry} />} />

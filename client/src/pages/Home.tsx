@@ -121,7 +121,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
             </div>
 
             {/* Right Column: Instant Course Finder & Lead Card */}
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-5 w-full max-w-lg mx-auto lg:max-w-none">
               <div className="bg-white text-slate-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl border border-slate-100">
                 <div className="flex items-center space-x-3 mb-6">
                   <div className="w-12 h-12 bg-brand-100 rounded-2xl flex items-center justify-center text-brand-600">
@@ -229,9 +229,9 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Pillar 1 */}
-          <div className="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-5">
               <div className="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
                 <GraduationCap className="w-7 h-7" />
@@ -266,7 +266,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
           </div>
 
           {/* Pillar 2 */}
-          <div className="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-5">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 text-accent flex items-center justify-center">
                 <BookOpen className="w-7 h-7" />
@@ -308,7 +308,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
           </div>
 
           {/* Pillar 3 */}
-          <div className="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-1">
             <div className="space-y-5">
               <div className="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
                 <Monitor className="w-7 h-7" />
@@ -545,9 +545,9 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Real Review 1 */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="flex text-amber-400 space-x-1">
@@ -579,7 +579,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
             </div>
 
             {/* Real Review 2 */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="flex text-amber-400 space-x-1">
@@ -611,7 +611,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry }) => {
             </div>
 
             {/* Real Review 3 */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 flex flex-col justify-between space-y-4 hover:border-amber-400/40 transition md:col-span-2 lg:col-span-1">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="flex text-amber-400 space-x-1">

@@ -114,7 +114,7 @@ export const NIOSAdmission: React.FC<NIOSAdmissionProps> = ({ onOpenEnquiry }) =
 
               <div>
                 <h3 className="font-bold text-slate-900 text-sm mb-3">Core & Elective Subjects</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-2.5 text-xs">
                   {[
                     'Hindi (201)',
                     'English (202)',
@@ -129,7 +129,7 @@ export const NIOSAdmission: React.FC<NIOSAdmissionProps> = ({ onOpenEnquiry }) =
                     'Psychology (222)',
                     'Indian Culture (223)'
                   ].map((sub) => (
-                    <div key={sub} className="bg-slate-50 border border-slate-200 p-2.5 rounded-lg font-medium text-slate-700">
+                    <div key={sub} className="bg-slate-50 border border-slate-200 p-2 sm:p-2.5 rounded-lg font-medium text-slate-700 break-words">
                       {sub}
                     </div>
                   ))}

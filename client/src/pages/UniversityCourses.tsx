@@ -195,10 +195,10 @@ export const UniversityCourses: React.FC<UniversityCoursesProps> = ({ onOpenEnqu
                       </div>
 
                       {/* Right: Actions */}
-                      <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0 lg:w-48 justify-center">
+                      <div className="flex flex-col sm:flex-row lg:flex-col gap-2.5 sm:gap-3 shrink-0 lg:w-48 justify-center">
                         <button
                           onClick={() => onOpenEnquiry(course.title, 'university')}
-                          className="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 px-4 rounded-xl text-xs shadow-md transition"
+                          className="flex-1 lg:w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 px-4 rounded-xl text-xs shadow-md transition text-center flex items-center justify-center"
                         >
                           Apply / Enquire Now
                         </button>
@@ -207,7 +207,7 @@ export const UniversityCourses: React.FC<UniversityCoursesProps> = ({ onOpenEnqu
                           href={`https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20want%20details%20about%20${encodeURIComponent(course.title)}.`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs shadow transition flex items-center justify-center space-x-1.5"
+                          className="flex-1 lg:w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs shadow transition flex items-center justify-center space-x-1.5 text-center"
                         >
                           <MessageCircle className="w-4 h-4" />
                           <span>WhatsApp Details</span>
@@ -216,7 +216,7 @@ export const UniversityCourses: React.FC<UniversityCoursesProps> = ({ onOpenEnqu
                         {course.syllabus && course.syllabus.length > 0 && (
                           <button
                             onClick={() => toggleExpand(course._id)}
-                            className="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-2 px-3 rounded-xl text-xs transition flex items-center justify-center space-x-1"
+                            className="flex-1 lg:w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-2 px-3 rounded-xl text-xs transition flex items-center justify-center space-x-1"
                           >
                             <span>{isExpanded ? 'Hide Syllabus' : 'View Syllabus'}</span>
                             {isExpanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
@@ -234,7 +234,7 @@ export const UniversityCourses: React.FC<UniversityCoursesProps> = ({ onOpenEnqu
                             Curriculum & Syllabus Highlights
                           </h4>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                           {course.syllabus.map((mod, idx) => (
                             <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200">
                               <div className="font-bold text-xs text-brand-700 mb-2">{mod.title}</div>

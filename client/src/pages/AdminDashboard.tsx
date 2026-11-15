@@ -392,7 +392,7 @@ export const AdminDashboard: React.FC = () => {
 
         {/* TAB 1: LEADS CRM */}
         {activeTab === 'leads' && (
-          <div className="bg-white rounded-b-2xl rounded-tr-2xl p-6 border border-slate-200 shadow-sm space-y-6">
+          <div className="bg-white rounded-b-2xl rounded-tr-2xl p-4 sm:p-6 border border-slate-200 shadow-sm space-y-6">
             {/* Filters & Export */}
             <div className="flex flex-col md:flex-row justify-between items-stretch md:items-center gap-4">
               <div className="flex flex-wrap items-center gap-3">
@@ -621,7 +621,7 @@ export const AdminDashboard: React.FC = () => {
 
         {/* TAB 2: COURSES CMS */}
         {activeTab === 'courses' && (
-          <div className="bg-white rounded-b-2xl rounded-tr-2xl p-6 border border-slate-200 shadow-sm space-y-6">
+          <div className="bg-white rounded-b-2xl rounded-tr-2xl p-4 sm:p-6 border border-slate-200 shadow-sm space-y-6">
             <div className="flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-bold text-slate-900">Manage Courses</h3>
@@ -777,7 +777,7 @@ export const AdminDashboard: React.FC = () => {
 
         {/* TAB 3: CERTIFICATES */}
         {activeTab === 'certificates' && (
-          <div className="bg-white rounded-b-2xl rounded-tr-2xl p-6 border border-slate-200 shadow-sm space-y-6">
+          <div className="bg-white rounded-b-2xl rounded-tr-2xl p-4 sm:p-6 border border-slate-200 shadow-sm space-y-6">
             <div className="flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-bold text-slate-900">Student Certificates & Roll Numbers</h3>
@@ -924,7 +924,7 @@ export const AdminDashboard: React.FC = () => {
 
         {/* TAB 4: NOTICES */}
         {activeTab === 'notices' && (
-          <div className="bg-white rounded-b-2xl rounded-tr-2xl p-6 border border-slate-200 shadow-sm space-y-6">
+          <div className="bg-white rounded-b-2xl rounded-tr-2xl p-4 sm:p-6 border border-slate-200 shadow-sm space-y-6">
             <div className="flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-bold text-slate-900">Manage Notices & Announcements</h3>

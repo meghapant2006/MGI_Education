@@ -198,7 +198,7 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
                     )}
                   </div>
 
-                  <div className="p-4 sm:p-6 bg-slate-50/70 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+                  <div className="p-4 sm:p-6 bg-slate-50/70 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <button
                       onClick={() => toggleExpand(course._id)}
                       className="text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center space-x-1"
@@ -207,19 +207,19 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
                       {isExpanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
                     </button>
 
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 w-full sm:w-auto">
                       <a
                         href={`https://wa.me/918929909708?text=Hello%20MGI%20Education%2C%20I%20want%20details%20for%20${encodeURIComponent(course.title)}.`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white border border-slate-200 text-emerald-600 hover:bg-emerald-50 p-2 rounded-lg text-xs font-bold transition flex items-center justify-center"
+                        className="bg-white border border-slate-200 text-emerald-600 hover:bg-emerald-50 p-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center shrink-0 min-h-[40px] min-w-[40px]"
                         title="Chat on WhatsApp"
                       >
                         <MessageCircle className="w-4 h-4" />
                       </a>
                       <button
                         onClick={() => onOpenEnquiry(course.title, 'computer')}
-                        className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-sm transition"
+                        className="flex-1 sm:flex-initial bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-lg text-xs font-bold shadow-sm transition min-h-[40px]"
                       >
                         Enquire / Demo
                       </button>
@@ -245,18 +245,18 @@ export const ComputerCourses: React.FC<ComputerCoursesProps> = ({ onOpenEnquiry 
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 text-center">
+            <div className="bg-white/5 border border-white/10 p-5 sm:p-6 rounded-2xl space-y-2">
               <div className="text-3xl font-black text-accent">1 : 1</div>
               <div className="font-bold text-sm text-white">Student to PC Ratio</div>
               <p className="text-xs text-slate-400">Never share a screen. You practice on your own dedicated computer throughout every batch.</p>
             </div>
-            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-2">
+            <div className="bg-white/5 border border-white/10 p-5 sm:p-6 rounded-2xl space-y-2">
               <div className="text-3xl font-black text-accent">Latest</div>
               <div className="font-bold text-sm text-white">Software Licenses</div>
               <p className="text-xs text-slate-400">Tally Prime, Adobe Creative Suite, CorelDraw, MS Office 365, and coding tools pre-installed.</p>
             </div>
-            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-2">
+            <div className="bg-white/5 border border-white/10 p-5 sm:p-6 rounded-2xl space-y-2 sm:col-span-2 lg:col-span-1">
               <div className="text-3xl font-black text-accent">Free</div>
               <div className="font-bold text-sm text-white">Extra Practice Hours</div>
               <p className="text-xs text-slate-400">Need extra lab practice? Students can practice extra hours at no additional fees.</p>
